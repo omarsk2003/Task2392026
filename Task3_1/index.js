@@ -3,7 +3,7 @@ let age=Number(prompt("Please enter your age"));
 let Zinger=
 {
 name:'zinger',
-price:'2.99',
+price:'2.99$',
 category:'food',
 available:true
 }
@@ -11,28 +11,28 @@ available:true
 let Burger= 
 {
 name:'burger',
-price:'3.99',
+price:'3.99$',
 category:'food',
 available:true
 }
 let Shawarma=
 {
 name:'shawarma',
-price:'1.99',
+price:'1.99$',
 category:'food',
 available:true
 } 
 let pizza=
 {
     name:'pizza',
-price:'5.99',
+price:'5.99$',
 category:'food',
 available:true
 }
 let Brosted=
 {
 name:'brosted',
-price:'4.99',
+price:'4.99$',
 category:'food',
 available:true
 }
@@ -76,7 +76,7 @@ simple(menu);
 
 let btn=document.querySelector(".bttn");
 btn.onmouseover = function () {
-    btn.style.color = "orange";
+    btn.style.color = "red";
 };
 
 btn.onmouseout = function () {
@@ -86,9 +86,7 @@ btn.onmouseout = function () {
 btn.onclick = function () {
   document.write("Hello "+name+" Your Order is <br>");
 
-  for (let key in selectedFood) {
-    console.log(key + ": " + selectedFood[key]);
-    document.write(key + ": " + selectedFood[key] + "<br>");
-}
+    document.write(selectedFood.name + "<br>");
+
   
 };

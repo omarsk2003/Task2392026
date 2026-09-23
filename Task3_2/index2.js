@@ -8,7 +8,7 @@ let italic = document.getElementById("italic");
 let underline = document.getElementById("underline");
 
 
-fontFamily.onchange = function () {
+fontFamily.onclick = function () {
     text.style.fontFamily = fontFamily.value;
 };
 
@@ -18,7 +18,7 @@ fontSize.onclick = function () {
 };
 
 
-bold.onchange = function () {
+bold.onclick = function () {
 
     if (bold.checked) {
         text.style.fontWeight = "bold";
